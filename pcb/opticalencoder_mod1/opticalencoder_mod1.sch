@@ -1,0 +1,531 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLegal 14000 8500
+encoding utf-8
+Sheet 1 1
+Title "Optical Encoder Prototype Board (mod1)"
+Date "2020-04-05"
+Rev "0.1"
+Comp "codeA, C.A."
+Comment1 "Alberto Medrano (alberto@codeagroup.com)"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L _Sensor_Optical:Agilent_AEDS-962x S1
+U 1 1 5E8AA369
+P 4250 4150
+F 0 "S1" H 4250 4649 50  0000 C CNN
+F 1 "Agilent_AEDS-962x" H 4250 4565 40  0000 C CNN
+F 2 "_Sensor_Optical:Agilent_AEDS-962x_Vertical" H 3900 4125 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet2/a/0a46za47kk0rg2x0izood71i9apy.pdf" H 3900 4125 50  0001 C CNN
+	1    4250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E8AD7FE
+P 5200 4500
+F 0 "#PWR0101" H 5200 4250 50  0001 C CNN
+F 1 "GND" H 5200 4350 40  0000 C CNN
+F 2 "" H 5200 4500 50  0001 C CNN
+F 3 "" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E8AF583
+P 5200 3800
+F 0 "#PWR0102" H 5200 3650 50  0001 C CNN
+F 1 "+3V3" H 5200 3950 40  0000 C CNN
+F 2 "" H 5200 3800 50  0001 C CNN
+F 3 "" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3800 5200 3900
+Wire Wire Line
+	5200 3900 5000 3900
+Wire Wire Line
+	5000 4400 5200 4400
+Wire Wire Line
+	5200 4400 5200 4500
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5E8B1A16
+P 7000 4100
+F 0 "J1" H 7080 4142 50  0000 L CNN
+F 1 "Conn_Port" H 7080 4051 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7000 4100 50  0001 C CNN
+F 3 "~" H 7000 4100 50  0001 C CNN
+	1    7000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5E8B52CF
+P 6000 4000
+F 0 "#PWR0103" H 6000 3850 50  0001 C CNN
+F 1 "+3V3" H 6000 4150 40  0000 C CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E8B5986
+P 6500 3900
+F 0 "#PWR0104" H 6500 3650 50  0001 C CNN
+F 1 "GND" H 6500 3750 40  0000 C CNN
+F 2 "" H 6500 3900 50  0001 C CNN
+F 3 "" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5E8BA3B9
+P 3300 3900
+F 0 "#PWR0105" H 3300 3750 50  0001 C CNN
+F 1 "+3V3" H 3300 4050 40  0000 C CNN
+F 2 "" H 3300 3900 50  0001 C CNN
+F 3 "" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3900 3300 4000
+Wire Wire Line
+	3300 4000 3500 4000
+$Comp
+L Device:R R1
+U 1 1 5E8BB99F
+P 3300 4550
+F 0 "R1" H 3370 4580 50  0000 L CNN
+F 1 "220R" V 3300 4550 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 4550 50  0001 C CNN
+F 3 "~" H 3300 4550 50  0001 C CNN
+	1    3300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4300 3300 4300
+Wire Wire Line
+	3300 4300 3300 4400
+$Comp
+L power:GND #PWR0106
+U 1 1 5E8BCFE6
+P 3300 5300
+F 0 "#PWR0106" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3300 5150 40  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3906 Q2
+U 1 1 5E8BE447
+P 4800 5800
+F 0 "Q2" H 4990 5838 50  0000 L CNN
+F 1 "MMBT3906" H 4990 5754 40  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 5725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4800 5800 50  0001 L CNN
+	1    4800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E8C3D16
+P 4650 5500
+F 0 "R5" V 4550 5500 50  0000 C CNN
+F 1 "4K7" V 4650 5500 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5500 50  0001 C CNN
+F 3 "~" H 4650 5500 50  0001 C CNN
+	1    4650 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E8C543E
+P 4150 5800
+F 0 "R4" V 4050 5800 50  0000 C CNN
+F 1 "4K7" V 4150 5800 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 5800 50  0001 C CNN
+F 3 "~" H 4150 5800 50  0001 C CNN
+	1    4150 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 5E8CCCD3
+P 4900 6150
+F 0 "D1" V 4939 6032 50  0000 R CNN
+F 1 "chA" V 4848 6032 50  0000 R CNB
+F 2 "LED_THT:LED_D3.0mm" H 4900 6150 50  0001 C CNN
+F 3 "~" H 4900 6150 50  0001 C CNN
+	1    4900 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E8CE0B2
+P 4900 6450
+F 0 "R8" H 4970 6430 50  0000 L CNN
+F 1 "2K" V 4900 6450 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 6450 50  0001 C CNN
+F 3 "~" H 4900 6450 50  0001 C CNN
+	1    4900 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E8CF8EE
+P 4900 6600
+F 0 "#PWR0107" H 4900 6350 50  0001 C CNN
+F 1 "GND" H 4900 6450 40  0000 C CNN
+F 2 "" H 4900 6600 50  0001 C CNN
+F 3 "" H 4900 6600 50  0001 C CNN
+	1    4900 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5500 4400 5500
+Wire Wire Line
+	4400 5500 4400 5800
+Wire Wire Line
+	4400 5800 4300 5800
+Wire Wire Line
+	4400 5800 4600 5800
+Connection ~ 4400 5800
+Wire Wire Line
+	4800 5500 4900 5500
+Wire Wire Line
+	4900 5500 4900 5600
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5E8D1A26
+P 4900 5400
+F 0 "#PWR0108" H 4900 5250 50  0001 C CNN
+F 1 "+3V3" H 4900 5550 40  0000 C CNN
+F 2 "" H 4900 5400 50  0001 C CNN
+F 3 "" H 4900 5400 50  0001 C CNN
+	1    4900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5400 4900 5500
+Connection ~ 4900 5500
+Text GLabel 3900 5800 0    50   Input ~ 0
+chA
+Wire Wire Line
+	3900 5800 4000 5800
+Text GLabel 5000 4100 2    50   Output ~ 0
+chA
+Text GLabel 5000 4200 2    50   Output ~ 0
+chB
+$Comp
+L Transistor_BJT:MMBT3906 Q3
+U 1 1 5E8E25AD
+P 6900 5800
+F 0 "Q3" H 7090 5838 50  0000 L CNN
+F 1 "MMBT3906" H 7090 5754 40  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 5725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6900 5800 50  0001 L CNN
+	1    6900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E8E25B7
+P 6750 5500
+F 0 "R7" V 6650 5500 50  0000 C CNN
+F 1 "4K7" V 6750 5500 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6680 5500 50  0001 C CNN
+F 3 "~" H 6750 5500 50  0001 C CNN
+	1    6750 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E8E25C1
+P 6250 5800
+F 0 "R6" V 6150 5800 50  0000 C CNN
+F 1 "4K7" V 6250 5800 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 5800 50  0001 C CNN
+F 3 "~" H 6250 5800 50  0001 C CNN
+	1    6250 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 5E8E25CB
+P 7000 6150
+F 0 "D2" V 7039 6033 50  0000 R CNN
+F 1 "chB" V 6948 6033 50  0000 R CNB
+F 2 "LED_THT:LED_D3.0mm" H 7000 6150 50  0001 C CNN
+F 3 "~" H 7000 6150 50  0001 C CNN
+	1    7000 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E8E25D5
+P 7000 6450
+F 0 "R9" H 7070 6430 50  0000 L CNN
+F 1 "2K" V 7000 6450 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 6450 50  0001 C CNN
+F 3 "~" H 7000 6450 50  0001 C CNN
+	1    7000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E8E25DF
+P 7000 6600
+F 0 "#PWR0109" H 7000 6350 50  0001 C CNN
+F 1 "GND" H 7000 6450 40  0000 C CNN
+F 2 "" H 7000 6600 50  0001 C CNN
+F 3 "" H 7000 6600 50  0001 C CNN
+	1    7000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5500 6500 5500
+Wire Wire Line
+	6500 5500 6500 5800
+Wire Wire Line
+	6500 5800 6400 5800
+Wire Wire Line
+	6500 5800 6700 5800
+Connection ~ 6500 5800
+Wire Wire Line
+	6900 5500 7000 5500
+Wire Wire Line
+	7000 5500 7000 5600
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 5E8E25F0
+P 7000 5400
+F 0 "#PWR0110" H 7000 5250 50  0001 C CNN
+F 1 "+3V3" H 7000 5550 40  0000 C CNN
+F 2 "" H 7000 5400 50  0001 C CNN
+F 3 "" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5400 7000 5500
+Connection ~ 7000 5500
+Text GLabel 6000 5800 0    50   Input ~ 0
+chB
+Wire Wire Line
+	6000 5800 6100 5800
+$Comp
+L Device:C C1
+U 1 1 5E8EF4A9
+P 6000 4350
+F 0 "C1" H 6115 4380 50  0000 L CNN
+F 1 "100nF" H 6115 4304 30  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6038 4200 50  0001 C CNN
+F 3 "~" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5E8F031E
+P 6000 4500
+F 0 "#PWR0111" H 6000 4250 50  0001 C CNN
+F 1 "GND" H 6000 4350 40  0000 C CNN
+F 2 "" H 6000 4500 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4100 6000 4000
+Wire Wire Line
+	6000 4100 6000 4200
+Wire Wire Line
+	6500 3900 6500 4000
+Text GLabel 6800 3900 0    50   Input ~ 0
+chA
+Text GLabel 6800 4200 0    50   Input ~ 0
+chB
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 5E8FAB3D
+P 3200 4900
+F 0 "Q1" H 3390 4938 50  0000 L CNN
+F 1 "MMBT3904" H 3390 4854 40  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3400 4825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3200 4900 50  0001 L CNN
+	1    3200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4900 2800 4900
+Wire Wire Line
+	2800 4900 2800 5200
+Wire Wire Line
+	2800 5200 2900 5200
+Wire Wire Line
+	3200 5200 3300 5200
+Wire Wire Line
+	3300 5200 3300 5300
+Wire Wire Line
+	3300 5200 3300 5100
+Connection ~ 3300 5200
+Wire Wire Line
+	3000 4900 2800 4900
+Connection ~ 2800 4900
+Text GLabel 2200 4900 0    50   Input ~ 0
+ledEN
+Text GLabel 6800 4300 0    50   Output ~ 0
+ledEN
+$Comp
+L Device:R R3
+U 1 1 5E8FF79F
+P 3050 5200
+F 0 "R3" V 2950 5200 50  0000 C CNN
+F 1 "4K7" V 3050 5200 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 5200 50  0001 C CNN
+F 3 "~" H 3050 5200 50  0001 C CNN
+	1    3050 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E9006C7
+P 2550 4900
+F 0 "R2" V 2450 4900 50  0000 C CNN
+F 1 "4K7" V 2550 4900 30  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 4900 50  0001 C CNN
+F 3 "~" H 2550 4900 50  0001 C CNN
+	1    2550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E93A307
+P 8500 4000
+F 0 "H1" H 8600 4038 50  0000 L CNN
+F 1 "MountingHole_SideL" H 8600 3954 40  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 8500 4000 50  0001 C CNN
+F 3 "~" H 8500 4000 50  0001 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E93AD1B
+P 8500 4250
+F 0 "H2" H 8600 4288 50  0000 L CNN
+F 1 "MountingHole_SideR" H 8600 4204 40  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 8500 4250 50  0001 C CNN
+F 3 "~" H 8500 4250 50  0001 C CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E93B049
+P 8500 4750
+F 0 "H3" H 8600 4788 50  0000 L CNN
+F 1 "MountingHole_CenterL" H 8600 4704 40  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 8500 4750 50  0001 C CNN
+F 3 "~" H 8500 4750 50  0001 C CNN
+	1    8500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E93B238
+P 8500 5000
+F 0 "H4" H 8600 5038 50  0000 L CNN
+F 1 "MountingHole_CenterR" H 8600 4954 40  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 8500 5000 50  0001 C CNN
+F 3 "~" H 8500 5000 50  0001 C CNN
+	1    8500 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 6800 4100
+Wire Wire Line
+	6500 4000 6800 4000
+$Comp
+L _codeA:codeA_Logo G1
+U 1 1 5E97E863
+P 12950 7150
+F 0 "G1" H 12950 6850 60  0001 C CNN
+F 1 "codeA_Logo" H 12950 7470 60  0001 C CNN
+F 2 "_codeA:codeA-logo_Copper" H 13125 7305 50  0001 C CNN
+F 3 "" H 13125 7305 50  0001 C CNN
+	1    12950 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4900 2300 4900
+Connection ~ 2300 4900
+Wire Wire Line
+	2300 4900 2400 4900
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5E9B077F
+P 2100 4700
+F 0 "JP1" H 2100 4853 50  0000 C CNN
+F 1 "LED_Enable" H 2100 4777 30  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2100 4700 50  0001 C CNN
+F 3 "~" H 2100 4700 50  0001 C CNN
+	1    2100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 5E9B19DD
+P 1800 4600
+F 0 "#PWR0112" H 1800 4450 50  0001 C CNN
+F 1 "+3V3" H 1800 4750 40  0000 C CNN
+F 2 "" H 1800 4600 50  0001 C CNN
+F 3 "" H 1800 4600 50  0001 C CNN
+	1    1800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4600 1800 4700
+Wire Wire Line
+	1800 4700 2000 4700
+Wire Wire Line
+	2200 4700 2300 4700
+Wire Wire Line
+	2300 4700 2300 4900
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5E9DED9E
+P 8500 5500
+F 0 "FID1" H 8585 5538 50  0000 L CNN
+F 1 "Fiducial" H 8585 5454 40  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8500 5500 50  0001 C CNN
+F 3 "~" H 8500 5500 50  0001 C CNN
+	1    8500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5E9DF82D
+P 8500 5750
+F 0 "FID2" H 8585 5788 50  0000 L CNN
+F 1 "Fiducial" H 8585 5704 40  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8500 5750 50  0001 C CNN
+F 3 "~" H 8500 5750 50  0001 C CNN
+	1    8500 5750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

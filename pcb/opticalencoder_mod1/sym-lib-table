@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name _codeA)(type Legacy)(uri ${KICODEASHARED}/_library/_codeA.lib)(options "")(descr ""))
+  (lib (name _Sensor_Optical)(type Legacy)(uri ${KICODEASHARED}/_library/_Sensor_Optical.lib)(options "")(descr ""))
+)

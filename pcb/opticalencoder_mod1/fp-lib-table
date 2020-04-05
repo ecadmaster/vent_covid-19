@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name _Sensor_Optical)(type KiCad)(uri ${KICODEASHARED}/_modules/_Sensor_Optical.pretty)(options "")(descr ""))
+  (lib (name _codeA)(type KiCad)(uri ${KICODEASHARED}/_modules/_codeA.pretty)(options "")(descr ""))
+)
