@@ -5,7 +5,7 @@ $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 1 1
 Title "Optical Encoder Prototype Board (mod1)"
-Date "2020-04-05"
+Date "2020-04-07"
 Rev "0.1"
 Comp "codeA, C.A."
 Comment1 "Alberto Medrano (alberto@codeagroup.com)"
@@ -137,7 +137,7 @@ F 1 "MMBT3906" H 4990 5754 40  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 5725 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4800 5800 50  0001 L CNN
 	1    4800 5800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R5
@@ -238,7 +238,7 @@ F 1 "MMBT3906" H 7090 5754 40  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 5725 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6900 5800 50  0001 L CNN
 	1    6900 5800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R7
